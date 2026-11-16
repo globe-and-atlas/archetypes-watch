@@ -9,12 +9,17 @@
 
 ## Purpose
 
-Describe who this project serves and what use, purpose, or beauty it should deliver.
+Offer 16 directly selectable visual clocks in one Pebble watchface. Type codes are design labels, not a personality assessment. Station House is the default; Margin Notes carries the optional “NOTICE THE GOOD” phrase.
 
 ## Constraints
 
-- Add real constraints here
+- One PBW for Emery, Gabbro, Chalk, and Diorite.
+- Large clock text and persistent shared settings. The battery indicator was removed by user request on 2026-10-23.
+- Date convention: Off, ISO, US, and EU formats; Off is the default.
+- No per-minute JavaScript or continuous sensor use.
 
 ## Out of Scope
 
-- Add out-of-scope boundaries here
+- Personality diagnosis or automatic type inference.
+- Location, network telemetry, and continuous animation.
+- Store publication and physical-watch acceptance during initial development.

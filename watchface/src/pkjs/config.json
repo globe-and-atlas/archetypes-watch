@@ -1,0 +1,49 @@
+[
+  {"type":"heading","defaultValue":"Archetypes"},
+  {"type":"text","defaultValue":"Sixteen designs in one watchface. Pick any look you like; the type names are an aesthetic catalog, not a personality test."},
+  {"type":"section","items":[
+    {"type":"heading","defaultValue":"Choose a face"},
+    {"type":"select","messageKey":"Face","label":"Design","defaultValue":"8","serializeValueAs":"integer","options":[
+      {"label":"INTJ / Observatory","value":"0"},
+      {"label":"INTP / Scratchpad","value":"1"},
+      {"label":"ENTJ / Command","value":"2"},
+      {"label":"ENTP / Branches","value":"3"},
+      {"label":"INFJ / Margin Notes","value":"4"},
+      {"label":"INFP / Paper Garden","value":"5"},
+      {"label":"ENFJ / Beacon","value":"6"},
+      {"label":"ENFP / Open Sky","value":"7"},
+      {"label":"ISTJ / Station House","value":"8"},
+      {"label":"ISFJ / Keepsake","value":"9"},
+      {"label":"ESTJ / Ledger","value":"10"},
+      {"label":"ESFJ / Gathering","value":"11"},
+      {"label":"ISTP / Field Kit","value":"12"},
+      {"label":"ISFP / Color Study","value":"13"},
+      {"label":"ESTP / Velocity","value":"14"},
+      {"label":"ESFP / Festival","value":"15"}
+    ]}
+  ]},
+  {"type":"section","items":[
+    {"type":"heading","defaultValue":"Clock"},
+    {"type":"select","messageKey":"TimeFormat","label":"Time format","defaultValue":"0","serializeValueAs":"integer","options":[
+      {"label":"Follow watch","value":"0"},{"label":"12-hour","value":"1"},{"label":"24-hour","value":"2"}
+    ]},
+    {"type":"select","messageKey":"DateFormat","label":"Date","defaultValue":"0","serializeValueAs":"integer","options":[
+      {"label":"Off","value":"0"},{"label":"YYYY-MM-DD","value":"1"},{"label":"MM/DD/YYYY","value":"2"},{"label":"DD/MM/YYYY","value":"3"}
+    ]}
+  ]},
+  {"type":"section","items":[
+    {"type":"heading","defaultValue":"Appearance"},
+    {"type":"select","messageKey":"Palette","label":"Visual style","defaultValue":"0","serializeValueAs":"integer","options":[
+      {"label":"Illustrated","value":"0"},{"label":"Warm sketch","value":"1"},{"label":"Cool sketch","value":"2"}
+    ]},
+    {"type":"select","messageKey":"Decoration","label":"Detail","defaultValue":"0","serializeValueAs":"integer","options":[
+      {"label":"Full","value":"0"},{"label":"Minimal sketch","value":"1"}
+    ]},
+    {"type":"toggle","messageKey":"StationArch","label":"Station House arch","defaultValue":true},
+    {"type":"select","messageKey":"PhraseMode","label":"Margin Notes phrase","defaultValue":"0","serializeValueAs":"integer","options":[
+      {"label":"Notice the Good","value":"0"},{"label":"Off","value":"1"},{"label":"Custom","value":"2"}
+    ]},
+    {"type":"input","messageKey":"CustomPhrase","label":"Custom phrase","defaultValue":"","attributes":{"placeholder":"Up to 18 characters","limit":18}}
+  ]},
+  {"type":"submit","defaultValue":"Save"}
+]

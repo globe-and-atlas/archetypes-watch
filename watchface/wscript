@@ -1,0 +1,39 @@
+import os
+
+top = '.'
+out = 'build'
+
+
+def options(ctx):
+    ctx.load('pebble_sdk')
+
+
+def configure(ctx):
+    ctx.load('pebble_sdk')
+
+
+def build(ctx):
+    ctx.load('pebble_sdk')
+    binaries = []
+    cached_env = ctx.env
+    for platform in ctx.env.TARGET_PLATFORMS:
+        ctx.env = ctx.all_envs[platform]
+        face = os.environ.get('AT_TEST_FACE')
+        tour = os.environ.get('AT_TEST_TOUR')
+        if face is not None:
+            if not face.isdigit() or not 0 <= int(face) < 16:
+                ctx.fatal('AT_TEST_FACE must be 0..15')
+            ctx.env.append_value('DEFINES', 'AT_TEST_FACE=%s' % face)
+        if tour is not None:
+            if tour != '1':
+                ctx.fatal('AT_TEST_TOUR must be 1')
+            ctx.env.append_value('DEFINES', 'AT_TEST_TOUR=1')
+        ctx.set_group(ctx.env.PLATFORM_NAME)
+        app_elf = '{}/pebble-app.elf'.format(ctx.env.BUILD_DIR)
+        ctx.pbl_build(source=ctx.path.ant_glob('src/c/**/*.c'), target=app_elf, bin_type='app')
+        binaries.append({'platform': platform, 'app_elf': app_elf})
+    ctx.env = cached_env
+    ctx.set_group('bundle')
+    ctx.pbl_bundle(binaries=binaries,
+                   js=ctx.path.ant_glob(['src/pkjs/**/*.js', 'src/pkjs/**/*.json']),
+                   js_entry_file='src/pkjs/index.js')

@@ -1,0 +1,428 @@
+{
+  "name": "archetypes-watch",
+  "author": "Globe & Atlas",
+  "version": "0.1.1",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "1.1.0"
+  },
+  "pebble": {
+    "displayName": "Archetypes",
+    "uuid": "7cc55141-35ac-4974-8112-684c3d3a982a",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "capabilities": [
+      "configurable"
+    ],
+    "targetPlatforms": [
+      "emery",
+      "gabbro",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "Face",
+      "TimeFormat",
+      "DateFormat",
+      "Palette",
+      "Decoration",
+      "PhraseMode",
+      "CustomPhrase",
+      "StationArch"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "ART_00_EMERY",
+          "file": "images/art_00_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_01_EMERY",
+          "file": "images/art_01_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_02_EMERY",
+          "file": "images/art_02_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_03_EMERY",
+          "file": "images/art_03_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_04_EMERY",
+          "file": "images/art_04_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_05_EMERY",
+          "file": "images/art_05_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_06_EMERY",
+          "file": "images/art_06_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_07_EMERY",
+          "file": "images/art_07_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_08_EMERY",
+          "file": "images/art_08_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_09_EMERY",
+          "file": "images/art_09_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_10_EMERY",
+          "file": "images/art_10_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_11_EMERY",
+          "file": "images/art_11_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_12_EMERY",
+          "file": "images/art_12_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_13_EMERY",
+          "file": "images/art_13_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_14_EMERY",
+          "file": "images/art_14_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_15_EMERY",
+          "file": "images/art_15_emery.png",
+          "targetPlatforms": [
+            "emery"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_00_GABBRO",
+          "file": "images/art_00_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_01_GABBRO",
+          "file": "images/art_01_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_02_GABBRO",
+          "file": "images/art_02_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_03_GABBRO",
+          "file": "images/art_03_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_04_GABBRO",
+          "file": "images/art_04_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_05_GABBRO",
+          "file": "images/art_05_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_06_GABBRO",
+          "file": "images/art_06_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_07_GABBRO",
+          "file": "images/art_07_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_08_GABBRO",
+          "file": "images/art_08_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_09_GABBRO",
+          "file": "images/art_09_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_10_GABBRO",
+          "file": "images/art_10_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_11_GABBRO",
+          "file": "images/art_11_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_12_GABBRO",
+          "file": "images/art_12_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_13_GABBRO",
+          "file": "images/art_13_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_14_GABBRO",
+          "file": "images/art_14_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_15_GABBRO",
+          "file": "images/art_15_gabbro.png",
+          "targetPlatforms": [
+            "gabbro"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_00_CHALK",
+          "file": "images/art_00_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_01_CHALK",
+          "file": "images/art_01_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_02_CHALK",
+          "file": "images/art_02_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_03_CHALK",
+          "file": "images/art_03_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_04_CHALK",
+          "file": "images/art_04_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_05_CHALK",
+          "file": "images/art_05_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_06_CHALK",
+          "file": "images/art_06_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_07_CHALK",
+          "file": "images/art_07_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_08_CHALK",
+          "file": "images/art_08_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_09_CHALK",
+          "file": "images/art_09_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_10_CHALK",
+          "file": "images/art_10_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_11_CHALK",
+          "file": "images/art_11_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_12_CHALK",
+          "file": "images/art_12_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_13_CHALK",
+          "file": "images/art_13_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_14_CHALK",
+          "file": "images/art_14_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        },
+        {
+          "type": "bitmap",
+          "name": "ART_15_CHALK",
+          "file": "images/art_15_chalk.png",
+          "targetPlatforms": [
+            "chalk"
+          ]
+        }
+      ]
+    }
+  }
+}
